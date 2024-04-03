@@ -1,0 +1,277 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(231, 235, 235);
+}
+.container{
+  width: 100%;
+  height: 75vh;
+  padding: 0vh 12.5vw;
+  margin: 5px 0px;
+}
+.form-table{
+  width: 75vw;
+  height: 75vh;
+  display: flex;
+  justify-content: left;
+  background-color: bisque;
+}
+
+.content{
+  width: 45vw;
+  height: 75vh;
+  background-color: #d4d4f5;
+}
+/* This is for dimensions of the  health image */
+.content img{
+  width: 45vw;
+  height: 100vh;
+}
+/* This is for dimensions of right side form */
+.form{
+  width: 30vw;
+  height: 100vh;
+  background-color: rgb(47, 79, 79);
+  z-index: 10;
+  /* width: 0vw;
+  overflow: hidden; */
+}
+#main-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkslategray;
+
+}
+
+#Health{
+  margin: 30px 0px 30px 0px;
+  font-size: 40px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  color: rgb(255, 237, 237);
+}   
+
+#form-menu{
+  width: 20vw;
+  height: 55vh;
+
+  background-color: darkslategray;
+  z-index: 10;
+
+}
+
+#form-menu p{
+  padding: 5px;
+  font-size: 24px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(236, 236, 236);
+}
+.input{
+  width: 18vw;
+  margin: 5px;
+  height: 40px;
+  padding: 5px 10px;
+  background-color: rgb(255, 255, 255);
+  border: 1px;
+  color:rgb(41, 40, 40);
+  border-radius: 3px;
+}
+.sub{
+  display: flex;
+  justify-content: normal;
+}
+
+.sub input{
+  width: 8.9vw;
+  margin-left: 5px;
+  height: 40px;
+  padding: 5px 10px;
+  background-color: rgb(255, 255, 255);
+  border: 1px;
+  color:rgb(41, 40, 40);
+  border-radius: 3px;
+}
+
+#form-menu select{
+  width: 18vw;
+  margin-left: 5px;
+  height: 40px;
+  padding: 5px 10px;
+  background-color: rgb(255, 255, 255);
+  border: 1px;
+  color:rgb(41, 40, 40);
+  border-radius: 3px;
+}
+
+#form-menu option{
+  width: 18vw;
+  margin-left: 5px;
+  height: 30px;
+  padding: 5px 10px;
+  background-color: rgb(255, 255, 255);
+  border: 1px;
+  color:rgb(41, 40, 40);
+  border-radius: 3px;
+}
+
+#button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#button button{
+  margin: 30px 0px;
+  width: 7vw;
+  height: 30px;
+  padding: 5px 10px;
+  background-color: rgb(255, 255, 255);
+  border: 1px;
+  color:rgb(41, 40, 40);
+  border-radius: 3px;
+  font-size: 16px;
+
+}
+
+.status{
+  width: 100%;
+  height: 30vh;
+  /* padding: 0vh 12.5vw; */
+  /* margin: 0vh 12.5vw; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status p{
+  text-align: center;
+  margin: 10px 0px;
+  font-size: 36px;
+  font-weight: 600;
+  /* text-decoration: underline; */
+  font-family: 'Nunito', sans-serif;
+  color: azure;
+  letter-spacing: 0.05em;
+}
+
+.php{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0.05em;
+  color: rgb(181, 159, 159);
+}
+
+/* .bmi{
+  width: 75vw;
+  background-color: darkslategray; */
+
+
+.your-bmi{
+  position:relative;
+  left:-95px;
+  top:-60px;
+  margin-top: 2px;
+  margin-left: 2px;
+  height: 5vh;
+  /* display: flex;
+  justify-content: center; */
+  font-size: 15px;
+}
+
+/* This controls the position and responsiveness of the button */
+.buttons{
+  display: flex;
+  padding: 0.2 80px;
+  justify-content: space-between;
+  padding-left:10%;
+  padding-top:10%;
+}
+
+/* This controls the apperance and displaying properties of the button */
+.btn{
+  height: 30px;
+  width: calc(200% - 10px);
+  nav-down: 20px;
+  border: 0;
+  border-radius: 6px;
+  font-size: 19px;
+  font-weight: 500;
+  color: #fff;
+  transition: .3s linear;
+  cursor: pointer;
+  background-color: rgb(201, 62, 62);
+}
+
+.btn:hover{
+  opacity: .6;
+}
+
+/* We use input after the class name "bmi-output" to use that class as a selector in css */
+.bmi-output input{
+  position:relative;
+  width:290px;
+  height:40px;
+  border-color:white;
+  border-radius:4px;
+  top:-135px;
+  left:6px;
+  padding-left:7px;
+}
+
+.phrase{
+  position:relative;
+  left: 0px;
+  top:-130px;
+  margin-top: 2px;
+  margin-left: 2px;
+  height: 5vh;
+  /* display: flex;
+  justify-content: center; */
+  font-size: 15px;
+}
+
+.phrase-output input{
+  position:relative;
+  width:290px;
+  height:40px;
+  border-color:white;
+  border-radius:4px;
+  top:-120px;
+  left:6px;
+  padding-left:7px;
+}
+
+.phrase-reset-button{
+  position:relative;
+  display: flex;
+  padding: 0.2 80px;
+  justify-content: space-between;
+  padding-left:10%;
+  top:-100px;
+  left:-2px;
+}
+
+.btn-reset{
+  height: 30px;
+  width: calc(92% - 8px);
+  nav-down: 20px;
+  border: 0;
+  border-radius: 6px;
+  font-size: 19px;
+  font-weight: 500;
+  color: #fff;
+  transition: .3s linear;
+  cursor: pointer;
+  background-color: rgb(201, 62, 62);
+}

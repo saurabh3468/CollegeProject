@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Hetlify Form</title>
+</head>
+
+<body background="/Hetlify/form Background.jpg">
+    <!-- navbar -->
+    <header class="nav-box">
+        <nav class="navbar">
+            <!-- <ul class="nav-links">
+                <li>
+                    <a href="./index.html" style="border-bottom: 1px solid black">signUP</a>
+                </li>
+
+            </ul> -->
+        </nav>
+    </header>
+    <section class="validator-section main-section">
+        <form class="form">
+            <h1>Health Calculator</h1>
+
+            <label for="name"> Enter Your Age: </label>
+            <input type="text" name="name" id="name" class="inp" placeholder="Enter your Age" />
+            
+            <label for="email"> Select you Gender: </label>
+            <select name="g1" size="1">
+                <option value="M" >Male
+                <option value="F">Female
+                <option value="O">Others</option>
+                </option>
+                </option>
+            </select>
+
+            <label for="pass"> What You Want to: </label>
+            <select name="a" size="1">
+                <option value="Reduce Weight">Reduce Weight</option>
+                <option value="Increase Weight">Increase Weight</option>
+            </select>
+            
+            <label for="confPass"> Your Current Height(in cm): </label>
+            <input type="password" name="confPass" id="confPass" class="inp" placeholder="Your Current Height" />
+
+            <label for="confPass"> Your Current Weight(in kg): </label>
+            <input type="password" name="confPass" id="confPass" class="inp" placeholder="Your Current Weight" />
+
+            <a href="/Hetlify/index.html"><button class="btn">Submit</button> </a>
+            <div class="msg"></div>
+        </form>
+    </section>
+
+    <script src="./hetlify.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+/* imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+
+/* body {
+  background-image: linear-gradient(to right, rgb(133, 105, 105), rgb(215, 103, 103));
+} */
+
+.main-section {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* navbar styles */
+
+.nav-box {
+  box-shadow: 0 0 3px #000;
+}
+
+.navbar,
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  height: 100px;
+  width: 90%;
+  margin: auto;
+  overflow-x: auto;
+}
+
+.nav-links > li {
+  margin: 0 1rem;
+}
+
+.nav-links > li > a {
+  padding: 0.2rem 0;
+  border-radius: 4px;
+  display: block;
+  width: 200px;
+  text-align: center;
+}
+
+.nav-links > li > a:hover {
+  background-color: #fff;
+}
+
+/* password validator area styles */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 4px 1px #0000007d;
+  border-radius: 8px;
+  padding: 1.5rem;
+  min-width: 350px;
+  background-color: #d2e8ff;
+}
+
+.form > h1 {
+  text-align: center;
+}
+
+.inp {
+  font-size: 0.9rem;
+  padding: 0.2rem 0.5rem;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 0.7rem;
+}
+
+.alertInp {
+  box-shadow: 0 0 3px red;
+}
+
+.inp::placeholder {
+  font-size: 0.8rem;
+}
+
+.inp:focus {
+  box-shadow: 0 0 2px #000;
+}
+
+.form > label {
+  font-size: 0.8rem;
+  width: fit-content;
+}
+
+/* .form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.3rem 0;
+} */
+
+.btn {
+  width: 90%;
+  border: none;
+  background: none;
+  box-shadow: 0 0 3px #000;
+  padding: 0.3rem;
+  border-radius: 8px;
+  margin: 0.5rem auto;
+  background-image: linear-gradient(to right, rgb(255, 98, 0), rgb(255, 98, 50));
+  opacity: 0.8;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* calculator styles*/
+
+.calc-section {
+  flex-direction: column;
+}
+
+.list-item-box {
+  min-width: 90%;
+  margin: auto;
+}
+
+.list-item {
+  list-style: numbers;
+  background-color: #fff;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  box-shadow: 0 0 2px #000;
+  border-radius: 4px;
+}
+
+.dynamicListForm {
+  align-self: flex-start;
+  margin: 1rem 0;
+}
+
+.bar-box {
+  position: fixed;
+  top: 15%;
+  width: 100%;
+  height: 10px;
+}
+
+.bar {
+  height: 100%;
+  background-image: linear-gradient(to right, #ff9244, #b374ff);
+  width: 0;
+  border-radius: 2px;
+}
+
+.progressBar-section {
+  /* height: 500vh; */
+  align-items: flex-start;
+}
+
+.progressBar-section > h2 {
+  margin: 5rem 0;
+}
+
+.move-img-form {
+  /* align-items: center; */
+  position: relative;
+  height: 200px;
+  margin: 0.5rem;
+}
+
+.img-box {
+  width: 80%;
+  height: 50vh;
+  position: relative;
+  box-shadow: 0 0 4px 1px #000;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+}
+
+.img {
+  width: 150px;
+  position: absolute;
+  transition: all 200ms linear;
+  top: 0;
+  left: 0;
+}
+
+.move-btn {
+  width: 40px;
+  font-weight: bold;
+  position: absolute;
+}
+
+.move-img-section {
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.right {
+  right: 30%;
+  top: 50%;
+}
+
+.left {
+  top: 50%;
+  left: 30%;
+}
+
+.up {
+  top: 30%;
+  left: 44%;
+}
+
+.down {
+  bottom: 10%;
+  left: 44%;
+}

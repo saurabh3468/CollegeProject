@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health calculator</title>
+    <link rel="stylesheet" href="mystyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-table">
+
+            <div class="content">
+                <img src="healthy.jpg">
+            </div>
+
+            <div class="form">
+                <div>
+                    <p id="Health"><u>Health Calculator</u></p>
+                </div>
+
+                <!-- <div class="my-test">
+                    <p>Welcome india</p>
+                </div> -->
+                <!-- <div id="main-form">
+                    <div id="form-menu">
+                        <form  method="post" id="internal-form"> -->
+
+                    <div id="main-form">
+                         <div id="form-menu">
+                            <form name="bmiForm">
+                                <p id="age">Age</p><input type="number" placeholder="Age" required="required" name="age" class="input"><br />
+
+
+                                <p id="weight">Your Weight(kg): </p>
+                                <input type="number" name="weight" size="10" placeholder="your weight" class="input">
+                        
+                                <p>Your Height:</p>
+                                <div class="sub">
+                                    <input type="number" placeholder="Feet" required="required" name="ftheight" id="feet">
+                                    <input type="number" placeholder="Inche" required="required" name="inheight" id="inches">
+                                </div>
+                                
+                                <div class="buttons">
+                                    <input type="button" class="btn" value="Calculate BMI" onClick="calculateBmi()"><br />
+                                </div>
+
+                                <div class="status">
+                                    <div class="bmi">
+                                        <div class="your-bmi"><p>Your BMI:</p> </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bmi-output">
+                                    <input type="bmiresult" name="bmi" size="10" placeholder="your bmi" class="bmiresult">
+
+                                </div>
+                        
+                               <div class="phrase"> <p>This means:</p>
+                               </div>
+
+                               <div class="phrase-output">
+                               <input class="bmimean" name="meaning" size="25">
+                               </div>
+                               
+                               <!-- This is for reset button -->
+                               <div class="phrase-reset-button">
+                                <input type="reset" class="btn-reset" value="Reset" />
+                            </div>
+
+                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+                        
+    <!-- <p>This Means: </p><input class="bmimean" name="meaning" size="25"><br />
+    <input type="reset" value="Reset" /> -->
+
+
+
+    <script>
+        function calculateBmi() {
+            var age=parseInt(document.bmiForm.age.value);
+            var weight = parseFloat(document.bmiForm.weight.value);
+            var ftHeight = parseFloat(document.bmiForm.ftheight.value);
+            var inHeight = parseFloat(document.bmiForm.inheight.value);
+            var height = 2.54 * (ftHeight * 12 + inHeight);
+
+            if (weight > 0 && height > 0) {
+                var finalBmi = weight / (height / 100 * height / 100)
+                document.bmiForm.bmi.value = finalBmi
+                if (finalBmi < 18.5) {
+                    document.bmiForm.meaning.value = "You eat less,try to eat more😒."
+                } else if (finalBmi > 18.5 && finalBmi < 25) {
+                    document.bmiForm.meaning.value = "Yah! you are healthy😍👌."
+                } else if (finalBmi > 25) {
+                    document.bmiForm.meaning.value = "Oops... you are overweight,exercise regularly🥲."
+                }
+            } else {
+                alert("Please Fill in everything correctly")
+            }
+        }
+    </script>
+
+</body>
+
+</html>
